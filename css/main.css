@@ -99,6 +99,13 @@ textarea {
    ========================================================================== */
 
 
+#comicbook .turn-page {
+    background-color: lightblue;
+}
+
+#comicbook .hard {
+    background: #ccc;
+}
 
 
 

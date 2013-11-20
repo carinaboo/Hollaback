@@ -22,7 +22,10 @@
         <div id="comicbook">
             <div class="hard"> Turn.js </div>
             <div class="hard"></div>
-            <div style="background-image:url(img/01.jpg);"></div>
+            <div style="background-image:url(img/01.jpg);">
+                <button onclick="jumpToPage(14)">Try this adventure</button>
+                <button onclick="jumpToPage(18)">Or this one!</button>
+            </div>
             <div> Page 1 </div>
             <div class="pickown"> Page 2 </div>
             <div> Page 3 </div>
@@ -41,12 +44,20 @@
         <script src="js/turn.js"></script>
 
         <script type="text/javascript">
+
+            // initialize comic book
             $("#comicbook").turn({
                 width: 800,
                 height: 500,
                 autoCenter: true
             });
 
+            // except put this inside turn.js or use one if they have it
+            function jumpToPage(pageNumber) {
+                alert("You've landed on page " + pageNumber);
+            };
+
+            // left/right keyboard shortcuts to turn page
             $(window).bind('keydown', function(e){
                 if (e.target && e.target.tagName.toLowerCase()!='input')
                     if (e.keyCode==37)

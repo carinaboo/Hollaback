@@ -7,3 +7,8 @@ body {
 	height: 220px;
 	background: url('../images/header_main.png') no-repeat top center;
 }
+
+#slider img {
+	max-height: 400px;
+	max-width: 1000px;
+}

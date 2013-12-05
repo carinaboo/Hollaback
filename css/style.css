@@ -13,7 +13,7 @@ body {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-.columns {
+.nav .columns {
 	padding: 0px;
 }
 
@@ -23,6 +23,10 @@ body {
 }
 
 /* Comic Book */
+
+.comic.columns {
+	padding: 0px;
+}
 
 #comicbook {
 	margin: 0 auto;

@@ -8,7 +8,35 @@ body {
 	background: url('../images/header_main.png') no-repeat top center;
 }
 
+.nav {
+	height: 51px;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.columns {
+	padding: 0px;
+}
+
 #slider img {
 	max-height: 400px;
 	max-width: 1000px;
+}
+
+/* Comic Book */
+
+#comicbook {
+	margin: 0 auto;
+}
+
+#comicbook .turn-page {
+    background-color: lightblue;
+}
+
+#comicbook .hard {
+    background: #333;
+}
+
+#comicbook .hard, #comicbook .page {
+	background-size:100% 100%;
+	background-repeat:no-repeat;
 }
